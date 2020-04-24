@@ -10,4 +10,8 @@ import Foundation
 
 class Kerem {
     
+    func doIt(name : String) {
+        print(name)
+    }
+    
 }

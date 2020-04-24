@@ -10,6 +10,7 @@
 		BC873DFE2452FA0100A2894D /* NewTryOn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC873DF42452FA0100A2894D /* NewTryOn.framework */; };
 		BC873E032452FA0100A2894D /* NewTryOnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC873E022452FA0100A2894D /* NewTryOnTests.swift */; };
 		BC873E052452FA0100A2894D /* NewTryOn.h in Headers */ = {isa = PBXBuildFile; fileRef = BC873DF72452FA0100A2894D /* NewTryOn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC873E0F2452FB8700A2894D /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC873E0E2452FB8700A2894D /* Logic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		BC873DFD2452FA0100A2894D /* NewTryOnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewTryOnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC873E022452FA0100A2894D /* NewTryOnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTryOnTests.swift; sourceTree = "<group>"; };
 		BC873E042452FA0100A2894D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC873E0E2452FB8700A2894D /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				BC873DF72452FA0100A2894D /* NewTryOn.h */,
+				BC873E0E2452FB8700A2894D /* Logic.swift */,
 				BC873DF82452FA0100A2894D /* Info.plist */,
 			);
 			path = NewTryOn;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					BC873DF32452FA0100A2894D = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					BC873DFC2452FA0100A2894D = {
 						CreatedOnToolsVersion = 11.4;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC873E0F2452FB8700A2894D /* Logic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		BC873E092452FA0100A2894D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ccc.com.NewTryOn;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +370,7 @@
 		BC873E0A2452FA0100A2894D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +394,7 @@
 		BC873E0C2452FA0100A2894D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NewTryOnTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +412,7 @@
 		BC873E0D2452FA0100A2894D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NewTryOnTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
